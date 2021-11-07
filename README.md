@@ -18,11 +18,13 @@ Dataset:
 # Setup
 
 ## Setup Google Cloud Platform (GCP)
-After we succed login into our GCP account, create our new project.
+After we succeded login into our GCP account, create our new project.
 
 - Google Cloud Storage
 1) Go to Cloud Storage
-2) Create bucket, then we can upload out dataset inside there
+2) Create bucket, then we can upload out upload the dataset there. (*in mycase i upload folder that has already many dataset in CSV files)
+
+![image](https://user-images.githubusercontent.com/38213112/140642927-4b0c48ee-fb6e-423a-b4d1-055d2558a4ea.png)
 
 - Compute Engine
 1) Go to Compute Engine 
@@ -77,3 +79,4 @@ After we succed login into our GCP account, create our new project.
         docker-compose up
 
 
+## 
