@@ -43,7 +43,9 @@ After we succeded login into our GCP account, create our new project.
    - SourceIpv4 : 0.0.0.0/0
    - Specified (check)TCP : 8080
 5) Go to Compute Engine, click your Instance that already created
+
 ![image](https://user-images.githubusercontent.com/38213112/140643746-bf9723bb-e114-4b88-935f-cb4aa1992817.png)
+
 6) Click edit, then add your "[firewall-name]" inside network tag. Example, i am adding airflow-port inside my network tag. Then save. (*By adding firewall with port: 8080, you can access your Airflow UI, with Ip:Externnal Ip, example= 34.124.227.11:8080)
 
 ## Setup Docker and Airflow
