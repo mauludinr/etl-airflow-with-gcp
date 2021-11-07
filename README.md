@@ -32,10 +32,9 @@ After we succeded login into our GCP account, create our new project.
    - Name : (Make an instance name that you want)
    - Region : asia-southeast1(Singapore)
    - Zone : asia-southeast1-b
-   - Machine type : e2-standart-2 (2vCPU, 8GB memory) {because we are using docker, we need a great memory, otherwise Airflow cannot be installed in that machine}
+   - Machine type : e2-standart-2 (2vCPU, 8GB memory) {*because we are using docker, we need a great memory, otherwise Airflow cannot be installed in that machine}
    - Disk size (GB): 50 GB
-   - Allow HTTP and HTTPS traffic for firewall
-     *reference (https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
+   - Allow HTTP and HTTPS traffic for firewall. *reference(https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 3) Go to Firewall 
 4) Create a firewall rule with,
    - Name : (Make a name that you want, but i am using airflow-port)
@@ -44,7 +43,7 @@ After we succeded login into our GCP account, create our new project.
    - SourceIpv4 : 0.0.0.0/0
    - Specified (check)TCP : 8080
 5) Go to Compute Engine, click your Instance that already created
-6) Click edit, then add your "[firewall-name]" inside network tag. Example, i am adding airflow-port inside my network tag. Save
+6) Click edit, then add your "[firewall-name]" inside network tag. Example, i am adding airflow-port inside my network tag. Then save. (*By adding firewall with port: 8080, you can access your Airflow UI, with Ip:Externnal Ip, example= 34.124.227.11:8080)
 
 ## Setup Docker and Airflow
 1) Go to Compute Engine, click on SSH to start a terminal
