@@ -27,20 +27,20 @@ After we succed login into our GCP account, create our new project.
 - Compute Engine
 1) Go to Compute Engine 
 2) Create new instance with,
-   Name : (Make an instance name that you want)
-   Region : asia-southeast1(Singapore)
-   Zone : asia-southeast1-b
-   Machine type : e2-standart-2 (2vCPU, 8GB memory) {because we are using docker, we need a great memory, otherwise Airflow cannot be installed in that machine}
-   Disk size (GB): 50 GB
-   Allow HTTP and HTTPS traffic for firewall
-   *reference (https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
+   - Name : (Make an instance name that you want)
+   - Region : asia-southeast1(Singapore)
+   - Zone : asia-southeast1-b
+   - Machine type : e2-standart-2 (2vCPU, 8GB memory) {because we are using docker, we need a great memory, otherwise Airflow cannot be installed in that machine}
+   - Disk size (GB): 50 GB
+   - Allow HTTP and HTTPS traffic for firewall
+     *reference (https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 3) Go to Firewall 
 4) Create a firewall rule with,
-   Name : (Make a name that you want, but i am using airflow-port)
-   Nework : default
-   Targets : All instances in the network
-   SourceIpv4 : 0.0.0.0/0
-   Specified (check)TCP : 8080
+   - Name : (Make a name that you want, but i am using airflow-port)
+   - Nework : default
+   - Targets : All instances in the network
+   - SourceIpv4 : 0.0.0.0/0
+   - Specified (check)TCP : 8080
 5) Go to Compute Engine, click your Instance that already created
 6) Click edit, then add your "[firewall-name]" inside network tag. Example, i am adding airflow-port inside my network tag. Save
 
@@ -68,7 +68,7 @@ After we succed login into our GCP account, create our new project.
         mkdir -p ./dags ./logs ./plugins
         echo -e "AIRFLOW_UID=$(id -u)" > .env
 
-7) initalizing the Airflow Environment
+7) Initalizing the Airflow Environment
         
         docker-compose up airflow-init
 
@@ -76,4 +76,4 @@ After we succed login into our GCP account, create our new project.
         
         docker-compose up
 
-  
+
