@@ -92,9 +92,9 @@ After we succeded login into our GCP account, create our new project.
 
 1) Upload the data inside the bucket from Google Cloud Storage
 2) Create new data set in Google Big Query
-3) Create pipeline script (i create pipeline with apache beam and python script)
-4) Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow.
-5) Create a DAG with airflow
+3) Create pipeline script (I create pipeline with apache beam and python script then save it flight.py)
+4) Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow. Upload it to your Cloud Storage
+5) Create a DAG with airflow that can run your pipeline script
 6) Test your Airflow DAG, then schedule it
 
 ![image](https://user-images.githubusercontent.com/38213112/141692888-787b4b0f-f89d-4eb8-8493-860c9922d53e.png)
