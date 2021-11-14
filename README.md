@@ -47,7 +47,7 @@ After we succeded login into our GCP account, create our new project.
 
 ![image](https://user-images.githubusercontent.com/38213112/140643746-bf9723bb-e114-4b88-935f-cb4aa1992817.png)
 
-(*By adding firewall with port: 8080, you can access your Airflow UI later, with Ip:Externnal Ip, example= 34.124.227.11:8080)
+(*By adding firewall with port: 8080, you can access your Airflow UI later, with Ip:External Ip, example= http://34.124.227.11:8080)
 
 ## Setup Docker and Airflow
 1) Go to Compute Engine, click on SSH to start a terminal
