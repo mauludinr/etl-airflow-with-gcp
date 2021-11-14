@@ -81,5 +81,22 @@ After we succeded login into our GCP account, create our new project.
         
         docker-compose up
 
+## Setup Dataflow and Bigquery
 
-## 
+1) For Dataflow, enable Dataflow API, make a service account to allow for access and schedule data flow, google cloud storage, and write big query for later.
+2) For Bigquery, create a new dataset with the same region with your cloud storage
+
+## Execute
+
+1) Upload the data inside the bucket from Google Cloud Storage
+2) Create new data set in Google Big Query
+3) Create pipeline script (i create pipeline with apache beam and python script)
+4) Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow.
+5) Create a DAG with airflow
+6) Test your Airflow DAG, then schedule it
+
+![image](https://user-images.githubusercontent.com/38213112/141692888-787b4b0f-f89d-4eb8-8493-860c9922d53e.png)
+![image](https://user-images.githubusercontent.com/38213112/141693006-535ea9e6-878e-441e-84b5-6cc98f8e3729.png)
+![image](https://user-images.githubusercontent.com/38213112/141693166-3e049085-7b9f-411c-8cf6-20987d598581.png)
+
+
