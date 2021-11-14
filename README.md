@@ -83,6 +83,8 @@ After we succeded login into our GCP account, create our new project.
         
 9) Go to your Airflow UI in browser, add connection between Airflow and GCP, *reference: https://medium.com/apache-airflow/a-simple-guide-to-start-using-apache-airflow-2-on-google-cloud-1811c2127445
 
+*optional: Go "docker pull docker pull okza/airflow-docker:1.0" to change your docker airflow image inside your .yaml file with okza/airflow-docker1.0 for better configuration 
+
 ## Setup Dataflow and Bigquery
 
 1) For Dataflow, enable Dataflow API, make a service account to allow for access and schedule data flow, google cloud storage, and write big query for later.
