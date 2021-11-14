@@ -80,6 +80,8 @@ After we succeded login into our GCP account, create our new project.
 8)  Start the services
         
         docker-compose up
+        
+9) Go to your Airflow UI in browser, add connection between Airflow and GCP, *reference: https://medium.com/apache-airflow/a-simple-guide-to-start-using-apache-airflow-2-on-google-cloud-1811c2127445
 
 ## Setup Dataflow and Bigquery
 
@@ -97,6 +99,7 @@ After we succeded login into our GCP account, create our new project.
 
 ![image](https://user-images.githubusercontent.com/38213112/141692888-787b4b0f-f89d-4eb8-8493-860c9922d53e.png)
 ![image](https://user-images.githubusercontent.com/38213112/141693006-535ea9e6-878e-441e-84b5-6cc98f8e3729.png)
-![image](https://user-images.githubusercontent.com/38213112/141693166-3e049085-7b9f-411c-8cf6-20987d598581.png)
+![image](https://user-images.githubusercontent.com/38213112/141693216-5079409e-7352-4f0b-a6dc-dc446b9925df.png)
+
 
 
