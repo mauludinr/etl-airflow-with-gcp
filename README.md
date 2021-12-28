@@ -7,9 +7,8 @@ Tools:
     - Dataflow
     - BigQuery
     2) Python 
-    3) Docker v1.29.2
-    4) Docker compose 1.29.2
-    5) Apache Airflow 2.2.1
+    3) Docker
+    4) Apache Airflow 2.2.1
     
 Dataset:
 
