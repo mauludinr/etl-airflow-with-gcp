@@ -100,9 +100,9 @@ Find what are favourite searched keywords by customer in certain time by providi
 1) Create a big table that consist of all unified files that stored in GCS (from 2018 to 2020)**[GCS to BigQuery]** :
    -  Upload the data inside the bucket from Google Cloud Storage
    -  Create new data set in Google Big Query(I create dataset named:  flight1)
-   -  Create pipeline script (I create pipeline with apache beam then save it to flight.py)
+   -  Create pipeline script (I create pipeline then save it to flight.py)
    -  Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow. Upload it to your Cloud Storage
-   -  Create a DAG with airflow that can run your pipeline script
+   -  Create a DAG with airflow that can run your pipeline script (I create dag named dag_allflight.py)
    -  Test your Airflow DAG, then schedule it
 
     ![image](https://user-images.githubusercontent.com/38213112/141692888-787b4b0f-f89d-4eb8-8493-860c9922d53e.png)
