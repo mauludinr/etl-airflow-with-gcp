@@ -5,8 +5,6 @@ from airflow.operators.dummy import DummyOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from airflow import configuration
 from airflow.models import Variable
-	@@ -17,30 +16,49 @@
-}
 
 PROJECT_ID = 'red-function-330907'
 PY_FILE = ('gs://de-week2-bucket/project_flight/dataflow/flight.py')
