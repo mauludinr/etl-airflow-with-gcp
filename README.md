@@ -98,32 +98,31 @@ Find what are favourite searched keywords by customer in certain time by providi
 
 ### Task 
 1) Create a big table that consist of all unified files that stored in GCS (from 2018 to 2020)[GCS to BigQuery] :
-    -  Upload the data inside the bucket from Google Cloud Storage
-    -  Create new data set in Google Big Query(I create dataset named:  flight1)
-    -  Create pipeline script (I create pipeline with apache beam then save it to flight.py)
-    -  Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow. Upload it to your Cloud Storage
-    -  Create a DAG with airflow that can run your pipeline script
-    -  Test your Airflow DAG, then schedule it
+   -  Upload the data inside the bucket from Google Cloud Storage
+   -  Create new data set in Google Big Query(I create dataset named:  flight1)
+   -  Create pipeline script (I create pipeline with apache beam then save it to flight.py)
+   -  Test your pipeline script, if it success,it can make a big table from all files that stored in GCS, then you can see the dataflow. Upload it to your Cloud Storage
+   -  Create a DAG with airflow that can run your pipeline script
+   -  Test your Airflow DAG, then schedule it
 
     ![image](https://user-images.githubusercontent.com/38213112/141692888-787b4b0f-f89d-4eb8-8493-860c9922d53e.png)
     ![image](https://user-images.githubusercontent.com/38213112/141693006-535ea9e6-878e-441e-84b5-6cc98f8e3729.png)
     ![image](https://user-images.githubusercontent.com/38213112/141693216-5079409e-7352-4f0b-a6dc-dc446b9925df.png)
 
-2) Create a table containing most searched keyword in every month(by selecting rank=1)[BigQuery to BigQuery] :
-    -  Create pipeline script (I create pipeline with apache beam then save it to keysearchmonth_bq.py)
+2) Create a table containing most searched keyword in every month(by selecting rank=1)**[BigQuery to BigQuery]** :
+   - Create pipeline script (I create pipeline then save it to keysearchmonth_bq.py)
      
-   Create a table that contains most searched keyword in every year(by selecting rank=1)[BigQuery to BigQuery] :
-    -  Create pipeline script (I create pipeline with apache beam then save it to keysearchyear_bq.py)
+   Create a table that contains most searched keyword in every year(by selecting rank=1)**[BigQuery to BigQuery]** :
+   - Create pipeline script (I create pipeline then save it to keysearchyear_bq.py)
    
    Create dag that can run your pipeline script(keysearchmonth_bq.py and keysearchyear_bq.py):
    
     ![image](https://user-images.githubusercontent.com/38213112/148005610-0126dcbd-3fb9-4e8f-983a-00ef506b83d5.png)
     
    Output :
+   
     ![image](https://user-images.githubusercontent.com/38213112/148005676-c5089d96-8907-42c3-8d5e-3a26e49595f1.png)
-
     ![image](https://user-images.githubusercontent.com/38213112/148006074-e38d5f37-aef4-4e1a-986f-642e288b5a2d.png)
-
     ![image](https://user-images.githubusercontent.com/38213112/148006147-1dcb7869-3f08-47b8-b67e-13939dfadbff.png)
 
     
