@@ -97,7 +97,7 @@ After we succeded login into our GCP account, create our new project.
 Find what are favourite searched keywords by customer in certain time by providing data needed by storing data from GCS to Google BigQuery
 
 ### Task 
-1) Create a big table that consist of all unified files that stored in GCS (from 2018 to 2020)[GCS to BigQuery] :
+1) Create a big table that consist of all unified files that stored in GCS (from 2018 to 2020)**[GCS to BigQuery]** :
    -  Upload the data inside the bucket from Google Cloud Storage
    -  Create new data set in Google Big Query(I create dataset named:  flight1)
    -  Create pipeline script (I create pipeline with apache beam then save it to flight.py)
