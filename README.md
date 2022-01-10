@@ -81,9 +81,9 @@ After we succeded login into our GCP account, create our new project.
        docker-compose up airflow-init
 
 8)  Start the services
-        
-       docker-compose up
-        
+    ```
+    docker-compose up
+    ```        
 9) Go to your Airflow UI in browser, add connection between Airflow and GCP, *reference: https://medium.com/apache-airflow/a-simple-guide-to-start-using-apache-airflow-2-on-google-cloud-1811c2127445
 
 *optional: Go "docker pull okza/airflow-docker:1.0" to change your docker airflow image inside your .yaml file from apache/airflow:2.2.1 to okza/airflow-docker:1.0 for better configuration 
@@ -93,10 +93,10 @@ After we succeded login into our GCP account, create our new project.
 1) For Dataflow, enable Dataflow API, make a service account to allow for access and schedule data flow, google cloud storage, and write big query for later.
 2) For Bigquery, create a new dataset with the same region with your cloud storage
 
-## Objective
+# Objective
 Find what are favourite searched keywords by customer in certain time by providing data needed by storing data from GCS to Google BigQuery
 
-### Task 
+## Task
 1) Create a big table that consist of all unified files that stored in GCS (from 2018 to 2020)**[GCS to BigQuery]** :
    -  Upload the data inside the bucket from Google Cloud Storage
    -  Create new data set in Google Big Query(I create dataset named:  flight1)
@@ -109,17 +109,17 @@ Find what are favourite searched keywords by customer in certain time by providi
     ![image](https://user-images.githubusercontent.com/38213112/141693006-535ea9e6-878e-441e-84b5-6cc98f8e3729.png)
     ![image](https://user-images.githubusercontent.com/38213112/141693216-5079409e-7352-4f0b-a6dc-dc446b9925df.png)
 
-2) Create a table containing most searched keyword in every month(by selecting rank=1)**[BigQuery to BigQuery]** :
-   - Create pipeline script (I create pipeline then save it to keysearchmonth_bq.py)
+2) - Create a table containing most searched keyword in every month(by selecting rank=1)**[BigQuery to BigQuery]** :
+     - Create pipeline script (I create pipeline then save it to keysearchmonth_bq.py)
      
-   Create a table that contains most searched keyword in every year(by selecting rank=1)**[BigQuery to BigQuery]** :
-   - Create pipeline script (I create pipeline then save it to keysearchyear_bq.py)
+   - Create a table that contains most searched keyword in every year(by selecting rank=1)**[BigQuery to BigQuery]** :
+     - Create pipeline script (I create pipeline then save it to keysearchyear_bq.py)
    
-   Create dag that can run your pipeline script(keysearchmonth_bq.py and keysearchyear_bq.py):
+   - Create dag that can run your pipeline script(keysearchmonth_bq.py and keysearchyear_bq.py):
    
-    ![image](https://user-images.githubusercontent.com/38213112/148005610-0126dcbd-3fb9-4e8f-983a-00ef506b83d5.png)
+     ![image](https://user-images.githubusercontent.com/38213112/148005610-0126dcbd-3fb9-4e8f-983a-00ef506b83d5.png)
     
-   Output :
+### Output :
    
     ![image](https://user-images.githubusercontent.com/38213112/148005676-c5089d96-8907-42c3-8d5e-3a26e49595f1.png)
     ![image](https://user-images.githubusercontent.com/38213112/148006074-e38d5f37-aef4-4e1a-986f-642e288b5a2d.png)
